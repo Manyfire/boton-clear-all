@@ -1,0 +1,80 @@
+html{
+  font-size: 64.2%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after{
+  box-sizing: inherit;
+}
+
+body{
+ line-height: 1.6rem;
+ margin: 0;
+ padding: 0;
+}
+
+.container {
+  background: rgb(222, 183, 76);
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+}
+  
+ 
+.boite-principale {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(1fr, auto);
+  margin: 20px 30px;
+  gap: 3px;
+}
+  
+
+.imajen {
+ 
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  flex-wrap: wrap;
+  position: static;
+  border-radius: 34px;
+}
+
+img {
+  width: 100%;
+  align-content: space-around;
+  border-radius: 34px;
+}
+
+.boite-boton {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  
+  grid-template-rows: repeat(1fr, auto);
+  margin: 10px 30px;
+}
+
+button {
+  width: 50%;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 1px solid blue;
+  border-radius: 15px;
+  margin: 0 auto;
+  padding: 5px;
+  background-color: rgb(76, 81, 107);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 3px 7px 5px grey;
+}
+
+.boite-boton > button:hover{
+  background: rgb(246, 22, 22);
+  transition: 0.3s;
+}
+
+
+
